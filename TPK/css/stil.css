@@ -1,0 +1,836 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    line-height: 25px;
+}
+
+html {
+    text-decoration: none;
+}
+
+
+.logotipnavigacija {
+    width: 140px;
+    display: flex;
+    position: fixed;
+    left: 0;
+    margin-top: -90px;
+}
+
+nav {
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    top: 0;
+    z-index: 30;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.tpk img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 50px;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    display: block;
+    font-size: 90%;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+li a:hover {
+    color: orangered;
+}
+
+li:hover {}
+
+nav ul li a:active,
+nav ul li a:hover {
+    opacity: 0.87;
+    color: orangered;
+    transition: 0.16s;
+
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.meni {
+    display: none;
+}
+
+.logc {
+    display: none;
+}
+
+@media screen and (max-width: 1450px) {
+    .logc {
+        position: fixed;
+        z-index: 3000000000000000;
+        top: 0px;
+        display: block;
+        width: 100%;
+        background-image: url(../slike/logo.png);
+        background-size: 30px;
+        background-color: white;
+        background-repeat: no-repeat;
+        background-position: 98% center;
+        cursor: pointer;
+    }
+
+    .meni {
+        position: fixed;
+        z-index: 30000000000000;
+        top: 0;
+        display: block;
+        height: 40px;
+        width: 100%;
+        background-image: url(../slike/menuicon.png);
+        background-size: 30px;
+        background-color: white;
+        background-repeat: no-repeat;
+        background-position: 98% center;
+        cursor: pointer;
+    }
+
+    #aw {
+        width: 70px;
+        position: fixed;
+        top: -20px;
+        left: 10px;
+        z-index: 100000000000000000000000000000000000;
+        background-image: url(../slike/logo.png);
+        background-size: cover;
+        visibility: visible;
+        display: inline;
+    }
+
+    #sekundlogo {}
+
+    .logotipnavigacija1 {
+        width: 42px;
+        z-index: 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+        position: fixed;
+        top: 1px;
+
+    }
+
+    .logotipnavigacija {
+        position: absolute;
+        left: 0;
+        width: 32px;
+    }
+
+    .prototipovi {
+        width: 70%;
+    }
+
+    .prototipovi img {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav ul {
+        padding-top: 40px;
+    }
+
+    .nav-mobilni {
+        display: block;
+    }
+
+    nav ul li {
+        width: 100%;
+        background-color: white;
+        border-bottom: 2px solid white;
+    }
+
+    nav ul li:last-child {
+        border-bottom: none;
+    }
+
+}
+
+.tpk {}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.011);
+    }
+}
+
+.pitanje {
+    border: 2px solid black;
+}
+
+.card:hover {
+    animation: pulse 1s ease;
+    cursor: pointer;
+
+}
+
+.slikica {
+    width: 350px;
+    height: auto;
+    box-shadow: 2px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.slikica1 {
+    width: 450px;
+    height: auto;
+    box-shadow: 2px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.slikica1:hover {
+    transform: scale(1.1);
+    transition: 0.16s;
+    cursor: pointer;
+}
+
+.slikica3:hover {
+    transform: scale(1.1);
+    transition: 0.16s;
+    cursor: pointer;
+}
+
+.ooo {
+    width: 100%;
+    height: 150vh;
+    display: inline-flex;
+    flex-direction: row;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#sekundlogo {
+    display: none;
+}
+
+.ooosolana {
+    width: 100%;
+    height: 150vh;
+    display: inline-flex;
+    flex-direction: row;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.ooosolana img {
+    margin: 20px;
+    width: 450px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+
+.slikica:hover {
+    transform: scale(1.1);
+    transition: 0.16s;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    height: 160px;
+    margin-top: 150px;
+    background-color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    order: 1;
+
+}
+
+footer img {
+    margin: 20px;
+    border-radius: 50%;
+    order: -1;
+}
+
+.h1proizvod {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    margin-top: 150px;
+    background-color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.h1proizvodic {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.h1proizvoda {
+    width: 100%;
+    height: 10px;
+    text-align: center;
+    margin-top: 150px;
+    background-color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.slikica3 {
+    width: 430px;
+    height: auto;
+    box-shadow: 2px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sss {
+    width: 100%;
+    height: 500px;
+    background-image: url(../slike/hitachi-white-black-angle-grinder-162534.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
+}
+
+#aw {
+    display: none;
+}
+
+.sssmapa {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
+
+}
+
+.sssmapaa iframe {
+    border-top: 3px solid black;
+}
+
+.sssmapaa {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
+    border-top: 3px solid black;
+}
+
+
+.sss1 {
+    width: 100%;
+    height: 500px;
+    background-image: url(../slike/slika.jpg);
+    background-size: cover;
+    background-position: top top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
+}
+
+.sss4 {
+    width: 100%;
+    height: 500px;
+    background-image: url(../slike/lewis-keegan-skillscouter-com-XQaqV5qYcXg-unsplash.jpg);
+    background-size: cover;
+    background-position: top top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
+}
+
+.sssss {
+    width: 90%;
+}
+
+.sss2 {
+    width: 100%;
+    height: 500px;
+    background-image: url(../slike/man-welding-metal-bars-2381463.jpg);
+    background-size: cover;
+    background-position: top top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
+}
+
+@media screen and (max-width: 1267px) {
+    .ooo {
+        flex-direction: row;
+    }
+
+    .prototipovi img {
+        width: 70%;
+    }
+
+    .desktopsadrzaj h3 {
+        text-align: center;
+    }
+
+    #veeee {
+        width: 350px;
+        margin: 0 auto;
+        margin-left: -60px;
+    }
+
+    .logotipnavigacija {
+        width: 140px;
+        display: flex;
+        position: fixed;
+        left: 0;
+        z-index: 100000000;
+        margin-top: -90px;
+    }
+
+    .cfframe {
+        width: 25%;
+
+    }
+
+    .imeee {
+        text-align: center;
+    }
+
+    .desktop {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .desktop img {
+        transform: none;
+        width: 90%;
+    }
+
+    .desktop p {
+        width: 90%;
+    }
+
+    .makni {
+        display: none;
+    }
+
+    .eee {
+        margin-top: 192px;
+    }
+
+    .eee p {
+        margin-top: 55px;
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        align-self: center;
+        padding-left: 50PX;
+    }
+
+    footer p {
+        margin-left: 40px;
+    }
+
+    .nes {
+        display: none;
+    }
+
+    .ooo img {
+        margin: 40px;
+
+    }
+
+    .aaa {
+        width: 90%;
+        padding: 40px;
+        margin-top: -70px;
+
+    }
+
+    .galerija {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        justify-content: space-around;
+    }
+
+    .galerija img {
+        margin: 20px;
+        width: 70%;
+    }
+
+    .asas {
+        margin-left: 20px;
+    }
+}
+
+.aaa {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding: 40px;
+    margin-top: -70px;
+}
+
+.aaa img {
+    display: flex;
+    flex-direction: row;
+
+    margin: 0 auto;
+}
+
+#al a {
+    color: black;
+    text-decoration: none;
+
+}
+
+#al a:hover {
+    text-decoration: none;
+    cursor: default;
+}
+
+.galerija {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.galerija img {
+    width: 40%;
+    box-shadow: 2px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.galerija55 {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.galerija55 img {
+    width: 20%;
+    box-shadow: 2px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pro a:hover {
+    text-decoration: none;
+     !important
+}
+
+.opi {
+    width: 100%;
+    height: 0.3px;
+    background-color: rgba(255, 0, 0, 0.25);
+}
+
+.slikica55 {
+    width: 350px;
+    height: auto;
+    box-shadow: 2px solid black;
+    border-radius: 45px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.slikica55:hover {
+    transform: scale(1.1);
+    transition: 0.16s;
+    text-decoration: none;
+}
+
+.prijeslikaanimacija:hover {
+    transform: scale(1.1);
+    transition: 0.16s;
+    text-decoration: none;
+}
+
+.pipi:hover {
+    text-decoration: none;
+    border: 0;
+}
+
+footer img {
+    width: 60px;
+    display: flex;
+
+}
+
+footer p {
+    width: 90%;
+}
+
+.krumpir {
+    background-color: white;
+    padding: 20px;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.krumpir:hover {
+    cursor: pointer;
+    color: orangered;
+    transition: 0.5s;
+}
+
+.krumpir a:hover {
+    text-decoration: none;
+}
+
+.pomfrit:hover {
+    text-decoration: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.form-label {
+    font-size: 12px;
+    color: orangered;
+    margin: 0;
+    display: block;
+    opacity: 1;
+    transition: .333s ease top, .333s ease opacity;
+}
+
+.form-control {
+    border-radius: 0;
+    border-color: #ccc;
+    border-width: 0 0 2px 0;
+    border-style: none none solid none;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: orangered;
+}
+
+.js-hide-label {
+    opacity: 0;
+}
+
+.js-unhighlight-label {
+    color: #999
+}
+
+.btn-start-order {
+    background: 0 0 #ffffff;
+    border: 1px solid #2f323a;
+    border-radius: 3px;
+    color: #2f323a font-size: 16px;
+    line-height: inherit;
+    margin: 30px 0;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    transition: all 0.25s ease 0s;
+}
+
+.btn-start-order:hover,
+.btn-start-order:active,
+.btn-start-order:focus {
+    border-color: orangered;
+    color: black;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.prije {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.prije img {
+    width: 100%;
+}
+
+.struktura {
+    width: 40%;
+    margin-top: -60px;
+}
+
+.frame {
+    width: 20%;
+}
+
+.desktop {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.opis {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.desktop img {
+    margin-top: -150px;
+    padding: 10px;
+    transform: scale(0.5)
+}
+
+.desktop p {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 24px;
+}
+
+
+.cfframe {
+    width: 30%;
+}
+
+.desktop h1 {
+    padding: 10px;
+    margin: 20px;
+}
+
+.programi {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.programi img {
+    width: 150px;
+    margin: 40px;
+}
+
+@media screen and (max-width: 1267px) {
+    .programi {
+        flex-direction: column;
+        justify-content: center;
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    .programi img {
+        width: 100px;
+    }
+}
+
+#i1:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.16s;
+}
+
+#i2:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.16s;
+}
+
+#i3:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.16s;
+}
+
+#i4:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.16s;
+}
+
+#i5:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.16s;
+}
+
+.programi p {
+    width: 100%;
+    text-align: center;
+}
+
+.poveznice p {
+    color: orangered;
+    text-align: center;
+}
+
+.prototipovi {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.prototipovi img {
+    width: 650px;
+}
+
+.promjena {
+    font-size: 15px;
+}
+
+.eee {
+    margin-top: 192px;
+}
